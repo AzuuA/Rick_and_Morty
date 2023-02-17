@@ -1,0 +1,18 @@
+.input{
+    border-radius: 4px;
+    margin-left: 10px;
+}
+.button:hover{
+ cursor: pointer;
+}
+.button{
+    margin-left: 60px;
+    border-left:transparent;
+    border-right:transparent;
+    border-top:transparent;
+    border-radius: 4px;
+    border-bottom-color: #9d0df7;
+}
+.label{
+    color:aliceblue;
+    }
