@@ -1,12 +1,20 @@
 .input{
     border-radius: 4px;
     margin-left: 10px;
+    border-bottom: 5px solid #1E1DC4;
+    height: 20px;
+    border-left:transparent;
+    border-right:transparent;
+    border-top:transparent;
 }
 .button:hover{
  cursor: pointer;
+ background-color: rgb(225, 225, 225);
 }
 .button{
-    margin-left: 60px;
+    margin-top: 20px;
+    height: 30px;
+    width: 90px;
     border-left:transparent;
     border-right:transparent;
     border-top:transparent;
@@ -14,5 +22,21 @@
     border-bottom-color: #9d0df7;
 }
 .label{
-    color:aliceblue;
+    color:rgb(224, 233, 241);
+    width: 100px;
+    font-size: 23px;
+    }
+    .form{
+
+        width: 550px;
+    }
+    .div{
+        background-color: rgba(0, 0, 0, 0.837);
+        border: rgb(0, 255, 34) 3px solid;
+        margin-top: 100px;
+        display: grid;
+        place-items: center;
+        height: 50vh;
+        width: 50vw;
+        
     }

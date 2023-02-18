@@ -61,8 +61,9 @@ const password =  '1password';
 
   return (
     <div className="App" style={{ padding: "25px" }}>
-      {location.pathname !== "/" && <Nav onSearch={onSearch} logOut={logOut}></Nav>}
-      <hr></hr>
+      <div className="a"> 
+      {location.pathname !== "/" && <Nav className="a" onSearch={onSearch} logOut={logOut}></Nav>}
+      </div>
       <Routes>
         <Route
           path="/home"

@@ -22,8 +22,9 @@ export default function Form({ login }) {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className={styles.div}>
+      <h1 className="login">LOGIN</h1>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <label className={styles.label}  htmlFor="username">Username:</label>
         <input className={styles.input}
           type="text"
@@ -41,7 +42,7 @@ export default function Form({ login }) {
           value={userData.password}
           placeholder="1password"
         />
-        <p>{errors.password}</p>
+        <p style={{ color: "red" }}>{errors.password}</p>
         <button className={styles.button} type="submit">ENTRAR</button>
       </form>
     </div>
