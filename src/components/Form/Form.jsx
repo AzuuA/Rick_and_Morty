@@ -1,5 +1,5 @@
 import React from "react";
-import { useFormAction } from "react-router-dom";
+//import { useFormAction } from "react-router-dom";
 import { validate } from "./validation";
 import styles from "../Form/form.module.css"
 
@@ -23,19 +23,20 @@ export default function Form({ login }) {
 
   return (
     <div className={styles.div}>
-      <h1 className="login">LOGIN</h1>
+      <h1 className={styles.login}>LOGIN</h1>
       <form className={styles.form} onSubmit={handleSubmit}>
-        <label className={styles.label}  htmlFor="username">Username:</label>
-        <input className={styles.input}
+        <label className={styles.labelu}  htmlFor="username">Email:</label>
+        <input className={styles.inputu}
           type="text"
           name="username"
           onChange={handleInputChange}
           value={userData.username}
           placeholder="ejemplo@gmail.com"
         />
+        <label className={styles.labelp} htmlFor="password">Password:</label>
+
         <p style={{ color: "red" }}>{errors.username}</p>
-        <label className={styles.label} htmlFor="password">Password:</label>
-        <input className={styles.input}
+        <input className={styles.inputp}
           type="password"
           name="password"
           onChange={handleInputChange}
