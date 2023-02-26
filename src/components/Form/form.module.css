@@ -6,6 +6,8 @@ body{
   grid-template-rows: 1fr;
   justify-content: center;
   align-items: center;
+text-decoration: none
+
 }
 input{
     height: 20px;
@@ -16,23 +18,28 @@ input{
  background-color: rgb(215, 215, 215);
 }
 .button{
-    translate: 0px -10px;
+    translate: 140px 40px;
     height: 30px;
     width: 90px;
     border:none;
     border-radius: 4px;
     border-bottom:4px solid #9d0df7;
     font-weight: bold;
+    
+
 }
+
 label{
     color:rgb(224, 233, 241);
-    text-align: left;
+    margin-left: 27px;
+    
     }
 
     .form{
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 10px;
+        translate: 0px -60px;
+        
     }
     
     .inputu,
@@ -44,9 +51,7 @@ label{
   border:2px solid #ff16d8;
   
 }
-.inputp{
-    margin-top: -20px;
-}
+
 
     .div{
         background-color: rgba(0, 0, 0, 0.837);
@@ -57,7 +62,7 @@ label{
         grid-template-rows: 1fr;
         justify-content: center;
         align-items: center;
-        height: 50vh;
+        height: 60vh;
         width: 50vw;
         margin-left: auto;
         margin-right: auto;
@@ -66,8 +71,12 @@ label{
     .login{
         color: rgb(104, 104, 252);
         text-shadow: -1px -1px 0 white;
-        font-size: 49px;
-        margin-top: 20px;
+        font-size: 60px;
+        translate: 35% -40px;
+    }
+    .error{
+        translate: 0 -17px;
+        margin-bottom: -10px;
     }
     @media only screen and (min-width : 150px) and (max-width : 530px){
         .form {
@@ -79,3 +88,4 @@ label{
         }
         /*hacerlo para otros dispositivos*/
       }
+     

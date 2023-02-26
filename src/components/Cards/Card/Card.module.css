@@ -2,30 +2,55 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8px;
-    margin-bottom: 16px;
+    margin-bottom: -200px;
     width: 250px;
     height: 350px;
     border-radius: 10px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff0db;
+    box-shadow: 2x 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f7eec8d5;
     border: 1px solid black;
+    margin-left: 20px;
+  transition: .5s, color .10s;
+  -webkit-transition: .5s, color .10s;
+  -moz-transition: .5s, color .10s;
+  margin-bottom: 45px;
+}
 
+            
+
+    
+  .container:hover{
+    box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    -moz-transform:translate(0px,5px);
   }
-  
+  .fav{
+    translate: 100px 130px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: solid 1px black;
+    font-size: 14px;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  .fav:hover{
+  cursor: pointer;
+  }
   .closeButton {
     cursor: pointer;
     background-color: grey;
     color: white;
     border: 1px solid black;
     border-radius: 10px;
-    width: 32px;
-    height: 32px;
+    width: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -35px;
-    margin-right: -240px;
+    translate: 115px -24px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
     
   }
 
@@ -35,24 +60,25 @@
   }
   
   .name {
-    position: absolute;
-    margin-top: 300px;
-    margin-right: 160px;
+    position: relative;
     font-size: 20px;
     color: rgb(0, 0, 0);
-    font-weight: bold;
-    background-color: #cb0454a9;
-    
+    font-weight: 900;
+    translate:0px -40px;
   }
   
   .species {
-    color: gray;
+    color: rgb(255, 1, 255);
     font-size: 16px;
+    translate:0px -40px;
+
   }
   
   .gender {
     color: green;
     font-size: 16px;
+    translate:0px -50px;
+
   }
   
   .image {
@@ -61,4 +87,6 @@
     margin-top: 5px;
     object-fit: cover;
     border-radius: 8px;
+    translate:0px -45px;
+
   }

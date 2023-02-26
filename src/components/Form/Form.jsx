@@ -33,9 +33,9 @@ export default function Form({ login }) {
           value={userData.username}
           placeholder="ejemplo@gmail.com"
         />
-        <label className={styles.labelp} htmlFor="password">Password:</label>
 
-        <p style={{ color: "red" }}>{errors.username}</p>
+        <p style={{ color: "red" ,fontSize:"12px"}} className={styles.error}>{errors.username}</p>
+        <label className={styles.labelp} htmlFor="password">Password:</label>
         <input className={styles.inputp}
           type="password"
           name="password"
@@ -43,7 +43,7 @@ export default function Form({ login }) {
           value={userData.password}
           placeholder="1password"
         />
-        <p style={{ color: "red" }}>{errors.password}</p>
+        <p style={{ color: "red" ,fontSize:"12px"}}className={styles.error}>{errors.password}</p>
         <button className={styles.button} type="submit">ENTRAR</button>
       </form>
     </div>

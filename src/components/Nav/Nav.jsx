@@ -7,22 +7,23 @@ import RandomButton from "./RandomButton";
 export default function Nav(props) {
   return (
     <div className={styles.container}>
-      <Link to="/home">
+      <Link to="/home"  style={{ textDecoration: 'none' }}>
         <span>Home</span>
       </Link>
 
-      <SearchBar onSearch={props.onSearch} />
 
-      <Link to="/about">
+      <Link to="/about" style={{ textDecoration: 'none' }}>
         <span>About</span>
       </Link>
-      <Link to="/favorites">
-        <span>Favorites</span>
+      <Link to="/favorites" style={{ textDecoration: 'none' }}>
+        <span >Favorites</span>
       </Link>
-      <span>
+      <SearchBar onSearch={props.onSearch} />
+
+      {/*<span>
       <RandomButton />
 
-      </span>
+      </span>*/}
     </div>
   );
 }

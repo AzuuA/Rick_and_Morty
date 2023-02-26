@@ -33,18 +33,18 @@ export default function Detail(props) {
 
   return (
     <div>
-      <div>
-        <button onClick={backToHome}>Volver</button>
+      <div className={styles.div}>
+        <button onClick={backToHome} className={styles.button}>Volver</button>
       </div>
       {infoDetail.id ? (
-        <div>
-          <h1>{infoDetail.name}</h1>
-          <h5>{infoDetail.status}</h5>
-          <h5>{infoDetail.species}</h5>
-          <h5>{infoDetail.gender}</h5>
-          <h5>{infoDetail.origin?.name}</h5>
+        <div className={styles.contenedor}>
+          <h1 className={styles.name}>{infoDetail.name}</h1>
+          <h5 className={styles.status}>{infoDetail.status}</h5>
+          <h5 className={styles.species}>{infoDetail.species}</h5>
+          <h5 className={styles.gender}>{infoDetail.gender}</h5>
+          <h5 className={styles.origin}>{infoDetail.origin?.name}</h5>
           <div>
-            <img src={infoDetail.image} alt={infoDetail.name} />
+            <img src={infoDetail.image} alt={infoDetail.name} className={styles.img}/>
           </div>
         </div>
       ) : (

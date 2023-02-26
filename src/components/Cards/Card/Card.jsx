@@ -31,20 +31,23 @@ export default function Card({ name, species, gender, image, onClose, id }) {
   return (
     <div className={styles.container}>
       {isFav ? (
-        <button onClick={handleFavorite}>❤️</button>
+        <button className={styles.fav}onClick={handleFavorite}>❤️</button>
       ) : (
-        <button onClick={handleFavorite}>🤍</button>
+        <button className={styles.fav}onClick={handleFavorite}>🤍</button>
       )}
 
       <button onClick={onClose} className={styles.closeButton}>
         X
       </button>
-      <Link to={`/detail/${id}`}>
-        <h2 className={styles.name}>{name}</h2>
+      <div className="prueba">
+      <Link to={`/detail/${id}`} style={{ textDecoration: 'none' }}>
+        <h2 className={styles.name}style={{ textDecoration: 'dashed' }}>{name}</h2>
         <h2 className={styles.species}>{species}</h2>
         <h2 className={styles.gender}>{gender}</h2>
         <img src={image} alt={name} className={styles.image} />
       </Link>
+      </div>
+    
     </div>
   );
 }

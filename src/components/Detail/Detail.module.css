@@ -1,0 +1,35 @@
+.button{
+    margin-top: 100px;
+    margin-left: 30px;
+    background-color: rgb(250, 212, 212);
+height: 30px;
+border-radius: 5px;
+}
+.button:hover{
+    cursor: pointer;
+}
+.contenedor{
+    background-color: rgba(241, 126, 126, 0.808);
+    width: 250px;
+    display: flex;
+    margin-left: 200px;
+    flex-direction: column;
+    align-items: center ;
+    translate: 350px 60px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.name{
+    font-size: 20px;
+}
+.img{
+    width: 200px;
+    margin-bottom: 15px;
+    border-radius: 9999999999px;
+}
+.div{
+    background-color: rgba(0, 0, 0, 0.808);
+    padding-bottom: 16px;
+    translate:0px 20px;
+
+}

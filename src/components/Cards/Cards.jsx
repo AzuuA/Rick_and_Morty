@@ -9,7 +9,7 @@ export default function Cards(props) {
     <div className={styles.container}>
       {characters ? (
         characters.map((element) => (
-          <Card
+          <Card className={styles.Card}
             name={element.name}
             species={element.species}
             gender={element.gender}

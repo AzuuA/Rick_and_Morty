@@ -1,9 +1,13 @@
 .container{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-evenly;
     background-color: rgba(0, 0, 0, 0.651);
     padding: 25px;
-    margin-top: -313px;
-    font-size: 50px;
-    width: 100vw;
+    font-size: 20px;
+    margin-top: -330px;
+    margin-bottom: 50px;
+
+}
+span{
+    color: rgb(255, 255, 255);
 }

@@ -22,7 +22,7 @@ export default function RandomButton() {
 
   return (
     <div>
-      <button onClick={getRandomCharacter}>Generar personaje aleatorio</button>
+      <button onClick={getRandomCharacter}>Random</button>
       {randomCharacter && (
         <div>
           <h2>{randomCharacter.name}</h2>
